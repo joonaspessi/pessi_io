@@ -1,0 +1,15 @@
+version: 1
+frontend:
+  phases:
+    pre-build:
+      commands:
+       - npm i
+    build:
+      commands:
+        - hugo
+  artifacts:
+    baseDirectory: public
+    files:
+      - '**/*'
+  cache:
+    paths: []
